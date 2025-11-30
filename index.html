@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🍓 Catch the Strawberries!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🍓 Catch the Strawberries!</h1>
+
+  <div id="scoreBoard">
+    Score: <span id="score">0</span>
+    <button id="pauseBtn">⏸️ Pause</button>
+    <label for="volume">🔉</label>
+    <input type="range" id="volume" min="0" max="1" step="0.1" value="0.3">
+  </div>
+
+  <div id="game">
+    <img id="basket" src="images/basket.png" />
+    <!-- Strawberries generated dynamically -->
+  </div>
+
+  <!-- Audio -->
+  <audio id="catch-sound" src="sounds/catch.mp3" preload="auto"></audio>
+  <audio id="miss-sound" src="sounds/miss.mp3" preload="auto"></audio>
+  <audio id="bg-music" src="sounds/bg-music.mp3" preload="auto" loop></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
